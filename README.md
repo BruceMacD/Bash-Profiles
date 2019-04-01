@@ -8,8 +8,11 @@
 ## Usage
 Use `vit` and `mvpn` commands in any place you'd use `git` or `mvn` to connect to the VPN before execution.
 
+
 Ex: 
+
 `vit pull` == `git pull`
+
 `mvpn clean install -DskipTests` == `mvn clean install -DskipTests`
 
 ## Requirements
