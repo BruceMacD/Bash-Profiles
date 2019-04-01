@@ -9,5 +9,5 @@ sh vpnConnector.sh
 
 eval git $args
 
-# scutil --nc stop $MY_VPN
+scutil --nc stop $DEFAULT_VPN
 printf "Disconnected from VPN \n"

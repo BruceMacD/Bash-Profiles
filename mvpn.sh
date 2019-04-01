@@ -9,5 +9,5 @@ printf "Running maven build with VPN connection \n"
 
 eval mvn $args
 
-# scutil --nc stop $MY_VPN
+scutil --nc stop $DEFAULT_VPN
 printf "Disconnected from VPN \n"

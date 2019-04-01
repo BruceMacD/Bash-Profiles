@@ -24,18 +24,19 @@ function poll_until_connected() {
 # Make sure the expected PATH var is set
 if [ -z "$DEFAULT_VPN" ] 
     then
-        printf "DEFAULT_VPN is not set in the path."
+        printf "DEFAULT_VPN is not set in the path. \n"
         exit 1
 fi
 
 scutil --nc start "$DEFAULT_VPN"
+#optional alternative to skip prompt: scutil --nc start "$DEFAULT_VPN" --user "$VPN_USERNAME" --password "$VPN_PASSWORD"
 
 if poll_until_connected "$DEFAULT_VPN";
     then
-        printf "Connected to $DEFAULT_VPN!"
+        printf "Connected to $DEFAULT_VPN \n"
         exit 0
 else
-    printf "Timed out attempting to connect to the default VPN"
+    printf "Timed out attempting to connect to the default VPN \n"
     scutil --nc stop "$DEFAULT_VPN"
     exit 1
 fi
