@@ -5,7 +5,7 @@ args=("$@")
 printf "Running maven build with VPN connection \n"
 
 # this is a utility script for connecting to the VPN
-sh vpnConnector.sh
+# sh vpnConnector.sh
 
 eval mvn $args
 
