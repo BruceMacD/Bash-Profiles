@@ -1,6 +1,6 @@
 #!/bin/bash
 # connect to a VPN => run git command => disconnect from a VPN
-args=("$@")
+args="$@"
 
 printf "Running git command with VPN connection \n"
 

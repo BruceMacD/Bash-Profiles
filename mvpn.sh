@@ -1,6 +1,6 @@
 #!/bin/bash
 # connect to a VPN => run maven => disconnect from a VPN
-args=("$@")
+args="$@"
 
 printf "Running maven build with VPN connection \n"
 
